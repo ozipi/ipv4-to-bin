@@ -1,6 +1,6 @@
 {
   "name": "ipv4-to-bin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Converts an ipv4 address to a binary form",
   "main": "src/ipv4-to-bin.js",
   "scripts": {
