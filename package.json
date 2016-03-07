@@ -4,7 +4,14 @@
   "description": "Converts an ipv4 address to a binary form",
   "main": "src/ipv4-to-bin.js",
   "scripts": {
-    "test": "make test"
+	"test": "npm run test-style && make test",
+    "test-jshint": "jshint src/ipv4-to-bin.js test/ipv4-to-bin.js",
+    "test-jscs": "node_modules/jscs/bin/jscs src/ipv4-to-bin.js test/ipv4-to-bin.js",
+    "test-style": "npm run test-jshint && npm run test-jscs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozipi/ipv4-to-bin.git"
   },
   "keywords": [
     "ipv4",
@@ -13,12 +20,18 @@
   ],
   "author": "Oscar Valdez",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozipi/ipv4-to-bin/issues"
+  },
+  "homepage": "https://github.com/ozipi/ipv4-to-bin#readme",
   "dependencies": {
     "to-binary": "*"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
     "istanbul": "~0.2.4",
     "coveralls": "~2.7.1"
   }
