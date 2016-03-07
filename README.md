@@ -23,6 +23,9 @@ A small method to convert an ipv4 from decimal to binary keeping the format x.x.
 
 Add unit tests for any new or changed functionality. Lint and test your code.
 
+@todo:
+- add error support for > 255
+
 ## Release History
 
 * 0.1.0 Initial release
