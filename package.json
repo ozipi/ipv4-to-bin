@@ -1,0 +1,25 @@
+{
+  "name": "ipv4-to-bin",
+  "version": "0.1.0",
+  "description": "Converts an ipv4 address to a binary form",
+  "main": "src/ipv4-to-bin.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "ipv4",
+    "bin",
+    "ipv42Bin"
+  ],
+  "author": "Oscar Valdez",
+  "license": "MIT",
+  "dependencies": {
+    "to-binary": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.7.1"
+  }
+}
